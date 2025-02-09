@@ -1,0 +1,33 @@
+:root {
+    /*Palette de couleur charte graphique*/
+    --primary-color:  #1c1c68;
+    --secondary-color: #00a99d;
+    --tertiary-color: #FFFFFF; 
+
+    /*Typographie*/
+    --primary-font: "Noto Sans", serif;
+    --secondary-font: "Audiowide", serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+}
+
+nav {
+    display: flex;
+    max-width: 100%;
+    overflow-x: hidden; 
+
+}
+
+.logo {
+    width: 10%;
+}
+
+.bouton{
+    font-family: var(--primary-font);
+    color: var(--tertiary-color);
+}
+
