@@ -50,7 +50,7 @@ nav a {
     height: 87vh;
 }
 
-.titre-accueil {
+.titre {
     color: var(--secondary-color);
     font-family: var(--secondary-font);
     margin-bottom: 1%;
@@ -78,4 +78,23 @@ nav a {
     background-color: var(--primary-color);
     margin-bottom: 5%;
 }
+
+.photo {
+    width: 100px;
+    border: solid;
+    border-color: var(--secondary-color);
+    border-radius: 8px;
+    margin: 2% 0;
+}
+
+.texte-profil {
+    display: flex;
+    align-self: flex-start;
+    font-family: var(--primary-color);
+    font-size: larger;
+    color: var(--tertiary-color);
+    padding: 0 25%; 
+    margin: 0 0 3% 0;
+}
+
 
