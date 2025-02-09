@@ -30,15 +30,39 @@ nav {
 }
 
 nav ul {
-    list-style-type: none; /* Supprime les puces */
-    display: flex; /* Affiche les éléments de la liste horizontalement */
-    gap: 50px; /* Espace entre les éléments */
+    list-style-type: none;
+    display: flex;
+    gap: 50px;
 }
 
 nav a {
     color: var(--tertiary-color);
     text-decoration: none;
     font-family: var(--primary-font);
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+
+    nav ul li {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .container {
+        padding-top: 25px;
+    }
 }
 
 .container {
@@ -108,6 +132,8 @@ nav a {
     gap: 20px; 
     justify-content: center;
     padding: 3% 5%;
+    height: 87vh;
+    background-color: var(--primary-color);
 }
 
 .portfolio-container img {
