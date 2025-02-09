@@ -97,4 +97,31 @@ nav a {
     margin: 0 0 3% 0;
 }
 
+.container-portfolio {
+    display: flex;
+    flex-wrap: wrap;   
+    gap: 20px; 
+    justify-content: center;
+    padding: 5%;
+}
 
+.portfolio-container img {
+    width: 50%;
+}
+
+.image {
+    width: 400px; 
+    height: 200px; 
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 1%;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+.image:hover img {
+    transform: scale(1.1); /* Zoom léger au survol */
+}
