@@ -43,3 +43,21 @@ Le portfolio s’adresse principalement :
 - **Mentions légales :** Inclusion d’une page spécifique avec les informations légales obligatoires.
 - **RGPD :** Conformité avec la réglementation sur la protection des données personnelles (ex. : bannière de consentement pour les cookies, politique de confidentialité).
 - **SEO :** Optimisation des balises meta, structuration correcte du contenu, rapidité du site et compatibilité avec les moteurs de recherche.
+
+
+# Charte graphique
+
+![Couleurs principales](assets/img/img_cg.png)
+![Typographie](assets/img/img_typo.png)
+
+# Use Case
+
+![Use case diagram](assets/img/img_ud.png)
+
+# Wireframe
+
+![Wireframe format ordinateur et téléphone](assets/img/wireframe.png)
+
+# Maquettage
+
+![Maquettage format ordinateur et téléphone](assets/img/maquettage.png)
