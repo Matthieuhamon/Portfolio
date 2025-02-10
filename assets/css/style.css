@@ -14,7 +14,7 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
-    background-color: #1c1c68;
+    background-color: var(--primary-color);
 }
 
 .logo {
@@ -215,10 +215,6 @@ nav a {
     display: flex;
     justify-content: center;
     gap: 10px;
-}
-
-.container-contact .form-3 {
-    flex: 1;
 }
 
 .container-contact .form-2 {
