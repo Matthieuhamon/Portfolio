@@ -24,16 +24,20 @@ nav a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-section {
-    padding: 100px 20px;
-    min-height: 100vh;
 }
   
 section:nth-child(even) {
     background: #f9f9f9;
+}
+
+#home {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px 50px 20px;
 }
   
 footer {
@@ -53,6 +57,5 @@ footer ul {
 footer a {
     text-decoration: none;
     color: #fff;
-    font-weight: bold;
     transition: color 0.3s ease;
 }
