@@ -3,66 +3,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Matthieu Hamon | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Accueil</a></li>
-                <li><a href="#about">À propos</a></li>
-                <li><a href="#projects">Projets</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <div class="logo">MH</div>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <nav>
+                <ul>
+                    <li><a href="#home">Accueil</a></li>
+                    <li><a href="#about">À propos</a></li>
+                    <li><a href="#projects">Projets</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span></span>
+            </label>
+        </div>
     </header>
+
     <main>
         <section id="home">
-            <h1>Matthieu Hamon</h1>
-            <p>Développeur web fullstacks</p>
+            <div class="container">
+                <h1>Matthieu Hamon</h1>
+                <p class="title">Développeur Web Fullstack</p>
+                <div class="btn-container">
+                    <a href="#projects" class="btn btn-primary">Voir mes projets</a>
+                    <a href="#contact" class="btn btn-secondary">Me contacter</a>
+                </div>
+            </div>
         </section>
 
         <section id="about">
-            <h2>À propos de moi</h2>
-            <img src="" alt="Photo-de-profil">
-            <p class="texte-profil">Bonjour,</p>
-            <p class="texte-profil">Je suis Matthieu Hamon, étudiant en cycle ingénieur à l’ESIEA Laval, spécialisé en informatique et technologies numériques. Originaire d’Angers, j’ai toujours été passionné par les technologies et le numérique</p>
-            <p class="texte-profil">Je souhaite développer mes compétences en développement web fullstack, en combinant des connaissances en programmation et en conception pour concevoir des applications modernes et performantes. Curieux et rigoureux, j’aime explorer de nouvelles technologies et relever des défis techniques pour améliorer mes capacités en développement.</p>  
-            <a href="assets/img/CV-Matthieu_Hamon.pdf" target="_blank">TÉLÉCHARGER CV</a>
+            <div class="container">
+                <h2>À propos de moi</h2>
+                <div class="about-content">
+                    <div class="profile-pic">
+                        <div class="img-container">
+                            <img src="assets/img/profile.jpg" alt="Photo de profil" class="photo-profil">
+                        </div>
+                    </div>
+                    <div class="about-text">
+                        <p class="texte-profil">Bonjour,</p>
+                        <p class="texte-profil">Je suis Matthieu Hamon, étudiant en cycle ingénieur à l'ESIEA Laval, spécialisé en informatique et technologies numériques. Originaire d'Angers, j'ai toujours été passionné par les technologies et le numérique.</p>
+                        <p class="texte-profil">Je souhaite développer mes compétences en développement web fullstack, en combinant des connaissances en programmation et en conception pour concevoir des applications modernes et performantes. Curieux et rigoureux, j'aime explorer de nouvelles technologies et relever des défis techniques pour améliorer mes capacités en développement.</p>
+                        <a href="assets/img/CV-Matthieu_Hamon.pdf" target="_blank" class="btn-cv">TÉLÉCHARGER CV</a>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section id="projects">
-            <h2>Portfolio</h2>
-            <ul>
-                <li><a href="#">Projet 1</a></li>
-                <li><a href="#">Projet 2</a></li>
-                <li><a href="#">Projet 3</a></li>
-            </ul>
+            <div class="container">
+                <h2>Mes Projets</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="assets/img/project1.jpg" alt="Projet 1">
+                        </div>
+                        <div class="project-info">
+                            <h3>Projet 1</h3>
+                            <p>Description détaillée du projet 1. Expliquez ici ce que vous avez réalisé, les problèmes que vous avez résolus et ce que vous avez appris.</p>
+                            <div class="tech-stack">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <a href="#" class="project-link">Voir le projet <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="assets/img/project2.jpg" alt="Projet 2">
+                        </div>
+                        <div class="project-info">
+                            <h3>Projet 2</h3>
+                            <p>Description détaillée du projet 2. Expliquez ici ce que vous avez réalisé, les problèmes que vous avez résolus et ce que vous avez appris.</p>
+                            <div class="tech-stack">
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>MongoDB</span>
+                            </div>
+                            <a href="#" class="project-link">Voir le projet <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="assets/img/project3.jpg" alt="Projet 3">
+                        </div>
+                        <div class="project-info">
+                            <h3>Projet 3</h3>
+                            <p>Description détaillée du projet 3. Expliquez ici ce que vous avez réalisé, les problèmes que vous avez résolus et ce que vous avez appris.</p>
+                            <div class="tech-stack">
+                                <span>Python</span>
+                                <span>Django</span>
+                                <span>PostgreSQL</span>
+                            </div>
+                            <a href="#" class="project-link">Voir le projet <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section id="contact">
-            <h2>Contactez-moi</h2>
-            <form action="#" method="post">
-                <label for="name">Nom:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-
-                <button type="submit">Envoyer</button>
-            </form>
+            <div class="container">
+                <h2>Contact</h2>
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>matthieu.hamon1@gmail.com</p>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-phone"></i>
+                        <h3>Téléphone</h3>
+                        <p>+33 7 60 18 45 61</p>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Localisation</h3>
+                        <p>Laval, France</p>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Site web</h3>
+                        <a href=""></a>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
         </section>
     </main>
+
     <footer>
-        <p>&copy; 2025 Matthieu Hamon. Tous droits réservés.</p>
-        <ul>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">GitHub</a></li>
-            <li><a href="#">LinkedIn</a></li>
-        </ul>
+        <div class="container">
+            <p>&copy; 2025 Matthieu Hamon. Tous droits réservés.</p>
+        </div>
     </footer>
 </body>
+</html>
